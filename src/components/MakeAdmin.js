@@ -58,7 +58,7 @@ const MakeAdmin = (props) => {
     setProcessingId(user_id);
 
     try {
-      const response = await axios.patch("http://localhost:5000/api/admin/add-admin", {
+      const response = await axios.patch("https://eduquest-backend-two.vercel.app/api/admin/add-admin", {
         user_id: user_id,
       });
 
