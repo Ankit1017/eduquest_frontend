@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
     const login = (user) => {
         setUser(user);
         localStorage.setItem('user', JSON.stringify(user));
-        window.location.href = "http://localhost:3000";
+        window.location.href = "http://hatched.site";
     };
 
     const logout = () => {
